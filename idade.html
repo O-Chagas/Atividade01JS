@@ -1,18 +1,30 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atividade Idade</title>
 </head>
+
 <body>
     <h1>Que classe sua idade pertence?</h1>
-    <form action="idade.html" method="GET" name="formIdade" onsubmit="calcularIdade();"></form>
+    <form action="idade.html" method="GET" name="formIdade">
 
-    <label for="classeIdade"> Qual a sua idade?</label>
-    <input type="text" name="idade" id="classeIdade" placeholder="Digite sua idade...">
+        <label for="classeIdade"> Qual a sua idade?</label>
+        <input type="text" name="idade" id="classeIdade" placeholder="Digite sua idade...">
 
+        <div>
+            <input type="button" value="Mostrar Resultado" onclick="calcularIdade();">
+            <input type="reset" value="Limpar Campos">
+        </div>
+     <div>
+         <label for="resultado">Classificação da sua idade: </label>
+         <input type="text" name="result" id="resultado">
+     </div> 
+
+    </form>
     <script src="../Atividade01JavaScript/javaScript/idade.js"></script>
 </body>
 
